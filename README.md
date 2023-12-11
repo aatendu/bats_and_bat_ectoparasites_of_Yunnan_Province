@@ -21,4 +21,4 @@ In brief, the workflow consists of these steps;
 6. The RefSeq Viruses rep genomes db is used with blastn to produce matches to each query file (nine in total)
 7. Subject sequences in the RefSeq Viruses rep genomes db that have matches in both the ectoparasite and its corresponding bat pool are retained for further analysis.
 
-The workflow may be run in this [conda environment](environment.yaml).
+The workflow may be run in this [conda environment](environment.yml).

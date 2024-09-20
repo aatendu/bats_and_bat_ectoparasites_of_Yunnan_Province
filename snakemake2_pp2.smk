@@ -24,7 +24,6 @@ rule filter_by_size:
     shell:
         """awk -v n=500 '/^>/{{ if(l>n) print b; b=$0;l=0;next }} {{l+=length;b=b ORS $0}}END{{if(l>n) print b }}' {input} > {output}"""
 
-#cheromydarling
 #this rule appends a prefix to the start of each sequence according to the pool IDs
 rule rename_the_sequences:
     output: "renamed/{this_pool}.fasta"
